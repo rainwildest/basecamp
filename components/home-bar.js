@@ -21,6 +21,7 @@ const HomeBar = () => {
         letf='0'
         textAlign='center'
         background='rgba(246, 242, 239, 0.9)'
+        zIndex='100'
       >
 
         <List
@@ -62,6 +63,8 @@ const HomeBar = () => {
           as='div'
           w='30px'
           h='30px'
+          mt='5px'
+          mr='10px'
           background='red'
           borderRadius='50%'
           position='absolute'

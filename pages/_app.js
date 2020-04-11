@@ -7,14 +7,20 @@ class App extends NextApp {
     const { Component } = this.props
     return (
       <ThemeProvider>
+        <CSSReset /><CSSReset />
         <ColorModeProvider>
-          <CSSReset />
+
           <Component />
 
           <style jsx global>
-            {`body{
-              background:#f6f2ef
-            }`}
+            {`
+            body{
+              background:#f6f2ef;
+            }
+            html{
+              font-size: 16px;
+            }
+            `}
           </style>
         </ColorModeProvider>
       </ThemeProvider>
